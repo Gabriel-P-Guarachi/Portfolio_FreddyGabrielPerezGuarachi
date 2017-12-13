@@ -19,13 +19,15 @@ header {
       justify-content: space-around;
       list-style: none; }
       header nav ul li i {
-        margin-right: 10px; }
+        margin-right: 10px;
+        font-weight: 700; }
       header nav ul li a {
         color: #212121;
         padding: 20px;
-        font-weight: bold;
+        font-weight: 400;
         display: block; }
         header nav ul li a:hover {
+          background-color: #eee;
           color: #212121;
           text-decoration: none; }
 
@@ -74,12 +76,37 @@ header {
         color: #f5f5f5;
         background-color: transparent;
         cursor: pointer;
-        border: 2px solid #000;
         text-shadow: 0px 1px 15px #000; }
+
+.proyectos {
+  height: 100vh;
+  width: 100%;
+  background-color: #eee; }
+  .proyectos .titulo {
+    font-size: 40px;
+    padding-top: 70px;
+    border-bottom: 2px solid #212121;
+    border-radius: 5px;
+    text-align: center;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500; }
+  .proyectos .container_proyectos {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+    .proyectos .container_proyectos .container-proyecto {
+      display: flex;
+      justify-content: space-between; }
+      .proyectos .container_proyectos .container-proyecto a img {
+        width: 300px;
+        height: 200px;
+        border-radius: 10px; }
 
 @media (max-width: 768px) {
   header nav {
-    width: 80%;
+    width: 60%;
     height: 100%;
     margin: 0px;
     position: fixed;
@@ -91,8 +118,10 @@ header {
       header nav ul li {
         border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
         header nav ul li a {
-          font-weight: 600;
+          font-weight: 400;
           font-size: 18px; }
+          header nav ul li a i {
+            font-weight: bold; }
   header .menu_bar {
     display: block;
     width: 100%;
@@ -108,7 +137,11 @@ header {
       header .menu_bar .btn_menu i {
         float: right;
         font-size: 40px;
-        margin-top: -10px; } }
+        margin-top: -10px; }
+
+  .container_portada .container_details {
+    width: 70%;
+    left: 15%; } }
 @media (max-width: 420px) {
   .container_portada .container_details {
     width: 90%;
