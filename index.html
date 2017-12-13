@@ -24,7 +24,7 @@
 
     <header>
         <div class="menu_bar">
-            <a href="#"><i class="mdi mdi-menu"></i> Logo</a>
+            <a href="#" class="btn_menu"><i class="mdi mdi-menu"></i> Logo</a>
         </div>
         <nav class="navbar_default">
             <ul>
@@ -50,7 +50,10 @@
     <div class="container_portada">
 
         <div class="image_fondo">
-            <img src="images/fondo-1.png" alt="">
+            <picture>
+                <source srcset="images/fondo-1-responsive.png" media="(max-width: 576px)">
+                <img srcset="images/fondo-1.png" alt="My default image">
+            </picture>
         </div>
 
         <div class="container_details">
@@ -68,7 +71,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/menu.js"></script>
 
 </body>
 

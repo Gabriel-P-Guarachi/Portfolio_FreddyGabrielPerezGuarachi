@@ -77,4 +77,49 @@ header {
         border: 2px solid #000;
         text-shadow: 0px 1px 15px #000; }
 
+@media (max-width: 768px) {
+  header nav {
+    width: 80%;
+    height: 100%;
+    margin: 0px;
+    position: fixed;
+    left: -100%;
+    background-color: white; }
+    header nav ul {
+      padding: 0px;
+      flex-direction: column; }
+      header nav ul li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+        header nav ul li a {
+          font-weight: 600;
+          font-size: 18px; }
+  header .menu_bar {
+    display: block;
+    width: 100%;
+    background-color: #fff; }
+    header .menu_bar .btn_menu {
+      display: block;
+      padding: 20px;
+      color: #212121;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 25px;
+      box-sizing: border-box; }
+      header .menu_bar .btn_menu i {
+        float: right;
+        font-size: 40px;
+        margin-top: -10px; } }
+@media (max-width: 420px) {
+  .container_portada .container_details {
+    width: 90%;
+    top: 150px;
+    left: 5%; }
+    .container_portada .container_details .details h1 {
+      font-size: 20px; }
+    .container_portada .container_details .details p {
+      font-size: 14px; }
+    .container_portada .container_details button {
+      width: 50%;
+      font-size: 16px; } }
+
 /*# sourceMappingURL=style-general.css.map */
