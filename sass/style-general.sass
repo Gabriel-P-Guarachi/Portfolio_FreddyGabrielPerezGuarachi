@@ -96,12 +96,11 @@ header
         font-weight: 500
     & .container_proyectos
         padding-bottom: 20px
-        width: 90%
         margin-left: auto
         margin-right: auto
         & .container-proyecto
             display: flex
-            justify-content: space-between
+            justify-content: space-around
             & a
                 & img
                     width: 300px
@@ -151,8 +150,13 @@ header
     .container_portada
         & .container_details
             width: 70%
-            left: 15%
-
+            left: 15%    
+    //Estilos de los proyectos
+    .proyectos .container_proyectos .container-proyecto
+        flex-wrap: wrap
+        & a
+            padding-bottom: 20px
+    
 @media (max-width: 420px)
     .container_portada
         & .container_details
@@ -164,8 +168,14 @@ header
                     font-size: 20px
                 & p
                     font-size: 14px
-            & button
+            & a
                 width: 50%
                 font-size: 16px
-
+    //Estilos de los proyectos
+    .proyectos .container_proyectos .container-proyecto
+        flex-direction: column
+        align-items: center
+        & a
+            padding-bottom: 20px                
+    
     
